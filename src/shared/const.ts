@@ -6,13 +6,13 @@ import { DEFAULT_MAYANODE_API_URLS, DEFAULT_MAYANODE_RPC_URLS } from './mayachai
 import { DEFAULT_MIDGARD_URLS } from './midgard/const'
 import { DEFAULT_THORNODE_API_URLS, DEFAULT_THORNODE_RPC_URLS } from './thorchain/const'
 
-export const ASGARDEX_IDENTIFIER = 999
+export const ASGARDEX_IDENTIFIER = 0
 
 // Thorname for affialiate address
-export const ASGARDEX_THORNAME = 'dx'
+export const ASGARDEX_THORNAME = ''
 
 // Affilaite Fee in basis points
-export const ASGARDEX_AFFILIATE_FEE = 10
+export const ASGARDEX_AFFILIATE_FEE = 0
 
 // Header key for 9R endpoints
 export const NINE_REALMS_CLIENT_HEADER = 'x-client-id'
@@ -20,8 +20,8 @@ export const NINE_REALMS_CLIENT_HEADER = 'x-client-id'
 export enum ExternalUrl {
   DOCS = 'https://docs.thorchain.org',
   DISCORD = 'https://discord.gg/hkeJxHS7d7',
-  GITHUB_REPO = `https://github.com/asgardex/asgardex-desktop`,
-  GITHUB_RELEASE = `https://github.com/asgardex/asgardex-desktop/releases/tag/v`,
+  GITHUB_REPO = `https://github.com/anonanon112233/asgardex-desktop-no-fee`,
+  GITHUB_RELEASE = `https://github.com/anonanon112233/asgardex-desktop-no-fee/releases/tag/v`,
   TWITTER = 'https://twitter.com/asgardex'
 }
 

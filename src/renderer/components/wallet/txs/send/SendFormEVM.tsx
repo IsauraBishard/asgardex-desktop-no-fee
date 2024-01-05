@@ -143,7 +143,7 @@ export const SendFormEVM: React.FC<Props> = (props): JSX.Element => {
         memoValue = memoValue.replace(/:dx:\d*$/, '')
 
         // Append ':dx:0'
-        memoValue += ':dx:0'
+        //memoValue += ':dx:0'
       }
 
       setSwapMemoDetected(true)

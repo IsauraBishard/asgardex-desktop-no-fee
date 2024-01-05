@@ -1,6 +1,6 @@
 {
   "appId": "org.thorchain.asgardex",
-  "productName": "ASGARDEX",
+  "productName": "ASGARDEX - NO FEE",
   "copyright": "Copyright © 2023 ${author}",
   "artifactName": "${productName}-${version}-${os}.${ext}",
   "afterSign": "./scripts/notarize.js",
@@ -53,9 +53,9 @@
       }
     ],
     "desktop": {
-      "Comment": "ASGARDEX",
+      "Comment": "ASGARDEX - NO FEE",
       "Icon": "asgardex",
-      "Name": "ASGARDEX",
+      "Name": "ASGARDEX - NO FEE",
       "StartupNotify": "true",
       "Terminal": "false",
       "Type": "Application",
@@ -64,8 +64,8 @@
   },
   "publish": {
     "provider": "github",
-    "owner": "asgardex",
-    "repo": "asgardex-desktop",
+    "owner": "anonanon112233",
+    "repo": "asgardex-desktop-no-fee",
     "private": false
   }
 }

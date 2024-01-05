@@ -44,7 +44,8 @@ import { useIntl } from 'react-intl'
 import * as RxOp from 'rxjs/operators'
 
 import { Network } from '../../../shared/api/types'
-import { ASGARDEX_AFFILIATE_FEE, ASGARDEX_THORNAME } from '../../../shared/const'
+//import { ASGARDEX_AFFILIATE_FEE, ASGARDEX_THORNAME } from '../../../shared/const'
+import { ASGARDEX_AFFILIATE_FEE } from '../../../shared/const'
 import { chainToString } from '../../../shared/utils/chain'
 import { isLedgerWallet } from '../../../shared/utils/guard'
 import { WalletType } from '../../../shared/wallet/types'
@@ -709,9 +710,9 @@ export const Swap = ({
             destinationAddress: address,
             streamingInterval: streamingInt,
             streamingQuantity: streaminQuant,
-            toleranceBps: toleranceBps,
-            affiliateAddress: ASGARDEX_THORNAME,
-            affiliateBps: network === 'stagenet' ? 0 : ASGARDEX_AFFILIATE_FEE
+            toleranceBps: toleranceBps
+            //affiliateAddress: ASGARDEX_THORNAME,
+            //affiliateBps: network === 'stagenet' ? 0 : ASGARDEX_AFFILIATE_FEE
           }
         })
       ),
@@ -755,9 +756,9 @@ export const Swap = ({
             amount: new CryptoAmount(convertBaseAmountDecimal(amountToSwapMax1e8, sourceAssetDecimal), sourceAsset),
             streamingInterval: isStreaming ? streamingInterval : 0,
             streamingQuantity: isStreaming ? streamingQuantity : 0,
-            toleranceBps: isStreaming ? 10000 : slipTolerance * 100, // convert to basis points
-            affiliateAddress: ASGARDEX_THORNAME,
-            affiliateBps: ASGARDEX_AFFILIATE_FEE
+            toleranceBps: isStreaming ? 10000 : slipTolerance * 100 // convert to basis points
+            //affiliateAddress: ASGARDEX_THORNAME,
+            //affiliateBps: ASGARDEX_AFFILIATE_FEE
           }
           if (!estimateSwap.amount.baseAmount.eq(baseAmount(0)) && lockedWallet) {
             currentDebouncedEffect(estimateSwap)
